@@ -47,14 +47,14 @@
 
 .heroConnect {
   padding: 13px 20px;
-  border-radius: 39px 10px;
+  border-radius: 25px 5px;
   background: linear-gradient(246deg, #a88221 -5%, green 100%);
   cursor: pointer;
 }
 
 .heroResume {
   padding: 13px 23px;
-  border-radius: 10px 39px;
+  border-radius: 25px 5px;
   border: 2px solid white;
 }
 
