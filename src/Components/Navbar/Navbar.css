@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+}
+.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.navmenu p.active {
+  color: #056306;
+}
+.navConnect {
+  padding: 15px 25px;
+  border-radius: 40px 10px;
+  background: linear-gradient(267deg, #dba10e 0.36%, #056306 102.06%);
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.navConnect:hover {
+  transform: scale(1.05);
+}
+
+.myName {
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(270deg, #dba10e 10%, #056306 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  z-index: -1;
+  margin-left: 87px;
+  margin-top: 40px;
+}
+
+.anchorLink {
+  text-decoration: none;
+  color: white;
+}
+
+.menuClose {
+  display: none;
+}
+
+.menuOpen {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+  .navConnect {
+    display: none;
+  }
+
+  .menuOpen {
+    display: block;
+    position: fixed;
+    right: 30px;
+    cursor: pointer;
+  }
+  .menuClose {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .navMenu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #243925;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+
+  .navMenu li {
+    font-size: 20px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1189px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1090px) {
+  .navMenu {
+    gap: 40px;
+    font-size: 16px;
+  }
+  .navConnect {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .navbar {
+    margin: 10px 100px;
+  }
+}
+
+@media (max-width: 794px) {
+  .navMenu {
+    gap: 20px;
+    font-size: 15px;
+  }
+  .navConnect {
+    padding: 8px 17px;
+    font-size: 15px;
+  }
+
+  .navbar {
+    margin: 10px 100px;
+  }
+}
