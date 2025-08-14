@@ -1,8 +1,8 @@
 import React from "react";
-import "./Hero.css";
-import profileImage from "../../assets/homePageImage.jpeg";
-import resumePdf from "../../assets/resume.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resumePdf from "../../assets/resume.pdf";
+import profileImage from "../../assets/homePageImage.jpeg";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -23,18 +23,6 @@ const Hero = () => {
             Connect With Me{" "}
           </AnchorLink>
         </div>
-
-        <a
-          href={resumePdf}
-          download
-          style={{
-            textDecoration: "none",
-            color: "inherit",
-            cursor: "pointer",
-          }}
-        >
-          <div className="heroResume">My Resume</div>
-        </a>
       </div>
     </div>
   );

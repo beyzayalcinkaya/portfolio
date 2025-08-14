@@ -57,7 +57,7 @@ const Contact = () => {
                 style={{ color: "green" }}
               >
                 location_on
-              </span>{" "}
+              </span>
               <p>Turkey</p>
             </div>
           </div>

@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
-import "./Navbar.css";
-
 import logo from "../../assets/pageIcon.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -31,32 +30,27 @@ const Navbar = () => {
         </span>
         <li>
           <AnchorLink className="anchorLink" href="#home">
-            {" "}
             <p onClick={() => setMenu("home")}>Home</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchorLink" offset={50} href="#about">
-            {" "}
             <p onClick={() => setMenu("about")}>About Me</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink className="anchorLink" offset={50} href="#services">
-            {" "}
             <p onClick={() => setMenu("services")}>Services</p>
           </AnchorLink>
         </li>
 
         <li>
           <AnchorLink className="anchorLink" offset={50} href="#contact">
-            {" "}
             <p onClick={() => setMenu("contact")}>Contact</p>
           </AnchorLink>
         </li>
       </ul>
       <div className="navConnect">
-        {" "}
         <AnchorLink className="anchorLink" offset={50} href="#contact">
           Connect With Me{" "}
         </AnchorLink>

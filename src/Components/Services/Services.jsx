@@ -1,8 +1,7 @@
 import React from "react";
 import "./Services.css";
-import image from "../../assets/pageIcon.png";
-import Services_Data from "../../assets/services_data";
-import arrow from "../../assets/arrowIcon.svg";
+
+import Services_Data from "../../assets/services_data.js";
 
 const Services = () => {
   return (
