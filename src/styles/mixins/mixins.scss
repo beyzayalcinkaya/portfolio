@@ -1,0 +1,44 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin flex-btw {
+    display: flex;          
+    justify-content: space-between; 
+    align-items: center;  
+
+  }
+
+ @mixin gradient-color-mix{
+    background: linear-gradient(45deg, #3ce43f, #2e552e);
+}
+
+@mixin listStyle{
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin gradient-color-orange{
+    background: linear-gradient(45deg, #ff8a00, #eea34e);
+}
+@mixin gradient-text{
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $breakpoint == midTablet {
+        @media (max-width: 990px) { @content; }
+      }
+    @else if $breakpoint == tablet {
+      @media (max-width: 1110px) { @content; }
+    }
+  }
+  
+ 

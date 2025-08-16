@@ -1,58 +1,73 @@
-import React, { useState, useRef } from "react";
-import logo from "../../assets/pageIcon.png";
+import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
-  const menuRef = useRef();
-  const openMenu = () => {
-    menuRef.current.style.right = "0";
-  };
-  const closeMenu = () => {
-    menuRef.current.style.right = "-350px";
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" className="logo" />
-      <span className="myName">Beyza</span>
-      <span className="menuOpen">
-        <span class="material-symbols-outlined" onClick={openMenu}>
-          menu
+      <div className="title">
+        <span className="material-symbols-outlined">cannabis</span>
+        <span className="myName">Beyza</span>
+      </div>
+
+      <button className="menu-btn" onClick={toggleMenu}>
+        <span className="material-symbols-outlined">
+          {isMenuOpen ? "close" : "menu"}
         </span>
-      </span>
-      <ul ref={menuRef} className="navMenu">
-        <span className="menuClose">
-          <span class="material-symbols-outlined" onClick={closeMenu}>
-            close
-          </span>
-        </span>
+      </button>
+
+      <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <AnchorLink className="anchorLink" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
-          </AnchorLink>
-        </li>
-        <li>
-          <AnchorLink className="anchorLink" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About Me</p>
-          </AnchorLink>
-        </li>
-        <li>
-          <AnchorLink className="anchorLink" offset={50} href="#services">
-            <p onClick={() => setMenu("services")}>Services</p>
+          <AnchorLink
+            className="anchorLink"
+            href="#home"
+            onClick={() => setMenu("home")}
+          >
+            Home
           </AnchorLink>
         </li>
 
         <li>
-          <AnchorLink className="anchorLink" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
+          <AnchorLink
+            className="anchorLink"
+            offset={50}
+            href="#about"
+            onClick={() => setMenu("about")}
+          >
+            About&nbsp;Me
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink
+            className="anchorLink"
+            offset={50}
+            href="#services"
+            onClick={() => setMenu("services")}
+          >
+            Services
+          </AnchorLink>
+        </li>
+
+        <li>
+          <AnchorLink
+            className="anchorLink"
+            offset={50}
+            href="#contact"
+            onClick={() => setMenu("contact")}
+          >
+            Contact
           </AnchorLink>
         </li>
       </ul>
       <div className="navConnect">
         <AnchorLink className="anchorLink" offset={50} href="#contact">
-          Connect With Me{" "}
+          Contact&nbsp;Me
         </AnchorLink>
       </div>
     </div>

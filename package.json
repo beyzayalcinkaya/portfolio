@@ -1,9 +1,6 @@
 {
   "name": "beyzayalcinkayaportfoliowebsite",
   "homepage": "https://beyzayalcinkaya.github.io/portfolio",
-
-
-
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,16 +10,16 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-
-"deploy": "gh-pages -d dist"
-
-
-    
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "i18next": "^25.3.6",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
     "react": "^19.1.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-i18next": "^15.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

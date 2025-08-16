@@ -1,0 +1,142 @@
+
+@use "../../styles/mixins/mixins" as mix;
+
+
+.navbar{
+    width: 100%;
+    @include mix.flex-btw;  
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+
+    .menu-btn{
+        display: none;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+ }
+    .title{
+        white-space: nowrap;
+
+       .material-symbols-outlined{
+        color: green;
+        margin:0 3rem;
+        font-size: 50px; 
+        transition: all 1s;    
+ 
+        &:hover {
+            transform: rotate(360deg); 
+            filter: drop-shadow(0 4px 8px rgba(0, 255, 0, 0.5));
+            color: #ff8a00; 
+         }
+       }
+
+    .myName{
+        font-size: 40px;
+       @include mix.gradient-color-mix;
+       @include mix.gradient-text
+    }
+
+        }
+
+    .nav-menu{
+    @include mix.flex-center;
+    @include mix.listStyle;
+    }
+
+    li{
+     margin: 0 2rem;
+
+       &:hover{
+        color: rgb(80, 230, 80); 
+        transform: scale(1.10);
+        border-bottom: 1px solid green;
+       }
+    }
+
+.navConnect{
+    @include mix.gradient-color-mix;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: all 1s;
+
+
+    &:hover{
+        transform: rotate(360deg); 
+        filter: drop-shadow(0 4px 8px orange);
+        @include mix.gradient-color-orange;
+    }
+}
+
+@include mix.responsive(phone){
+
+    .menu-btn {
+        display: block; 
+        z-index:2;
+      }
+      .nav-menu {
+          display: none; 
+        }
+        .navConnect{
+          display: none;
+        }
+        .nav-menu.open{
+          display: flex;
+          flex-direction: column; 
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 220px;
+          background: rgba(0, 128, 0, 0.2); 
+          backdrop-filter: blur(8px); 
+          padding: 2rem 1rem;
+          z-index: 1;
+        }
+        li{
+            margin: 0;
+            top: 0;
+            padding: 1rem;
+        }
+}
+@include mix.responsive(midTablet){
+    padding: 1rem 0rem;
+
+    .title .myName {
+        font-size: 25px;
+      }
+    .title .material-symbols-outlined {
+        font-size: 20px;
+    }
+      .nav-menu li {
+        margin: 0 1rem;
+      }
+      .navConnect {
+        padding: 1rem 1rem;
+      }
+  }
+
+
+
+@include mix.responsive(tablet) {
+    padding: 1rem 2rem;
+    
+     .title .myName {
+      font-size: 35px;
+    }
+
+    .title .material-symbols-outlined {
+      font-size: 40px;
+      margin: 0 2rem;
+    }
+
+    .nav-menu li {
+      margin: 0 2rem;
+    }
+
+  }
+
+}
+
+

@@ -1,12 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
-body{
+body {
   height: 100vh;
   background-color: #161513;
-  color:white;
-  font-family: 'outfit';
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.anchorLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
 }
