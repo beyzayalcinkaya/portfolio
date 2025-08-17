@@ -10,7 +10,6 @@ import PageLoader from "./Components/PageLoader/PageLoader";
 const App = () => {
   return (
     <div>
-      <PageLoader />
       <Navbar />
       <Hero />
       <About />

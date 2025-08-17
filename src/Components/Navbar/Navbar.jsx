@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="title">
+      <div className="title nav-item delay-1">
         <span className="material-symbols-outlined">cannabis</span>
         <span className="myName">Beyza</span>
       </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
       </button>
 
       <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
-        <li>
+        <li className="nav-item delay-2">
           <AnchorLink
             className="anchorLink"
             href="#home"
@@ -33,7 +33,7 @@ const Navbar = () => {
           </AnchorLink>
         </li>
 
-        <li>
+        <li className="nav-item delay-3">
           <AnchorLink
             className="anchorLink"
             offset={50}
@@ -43,7 +43,7 @@ const Navbar = () => {
             About&nbsp;Me
           </AnchorLink>
         </li>
-        <li>
+        <li className="nav-item delay-4">
           <AnchorLink
             className="anchorLink"
             offset={50}
@@ -54,7 +54,7 @@ const Navbar = () => {
           </AnchorLink>
         </li>
 
-        <li>
+        <li className="nav-item delay-5">
           <AnchorLink
             className="anchorLink"
             offset={50}
@@ -65,7 +65,7 @@ const Navbar = () => {
           </AnchorLink>
         </li>
       </ul>
-      <div className="navConnect">
+      <div className="navConnect nav-item delay-6 ">
         <AnchorLink className="anchorLink" offset={50} href="#contact">
           Contact&nbsp;Me
         </AnchorLink>

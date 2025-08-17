@@ -11,13 +11,29 @@
 
   }
 
+  @mixin flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+  @mixin justify-align-center{
+    justify-content: center;
+    align-items: center;
+  }
+
  @mixin gradient-color-mix{
     background: linear-gradient(45deg, #3ce43f, #2e552e);
+}
+@mixin gradient-color-mix2{
+  background: linear-gradient(266deg, #efca6b -5%, rgb(144, 249, 144) 100%);
 }
 
 @mixin listStyle{
     text-decoration: none;
     list-style: none;
+}
+@mixin link{
+  text-decoration: none;
+  color: white;
 }
 
 @mixin gradient-color-orange{
@@ -37,8 +53,9 @@
         @media (max-width: 990px) { @content; }
       }
     @else if $breakpoint == tablet {
-      @media (max-width: 1110px) { @content; }
+      @media (max-width: 1060px) { @content; }
     }
+
   }
   
  

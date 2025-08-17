@@ -1,11 +1,25 @@
-
 @use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as animation;
+
+
+  .nav-item {
+    opacity: 0;
+    animation: animationSlide 0.5s forwards;
+    transform: translateY(-30px);
+
+ }
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
 
 
 .navbar{
     width: 100%;
     @include mix.flex-btw;  
-    align-items: center;
     margin: 0 auto;
     padding: 1rem 4rem;
 
