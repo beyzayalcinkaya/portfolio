@@ -7,11 +7,11 @@
   margin: 80px 170px;
 }
 
-.contactTitle {
+.contact-title {
   position: relative;
 }
 
-.contactTitle h1 {
+.contact-title h1 {
   padding: 0px 30px;
   font-size: 60px;
   font-weight: 600;
@@ -21,7 +21,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.contactSection {
+.contact-section {
   display: flex;
   gap: 150px;
 }
@@ -62,20 +62,20 @@
   gap: 20px;
 }
 
-.contactRight {
+.contact-form {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
 
-.contactRight label {
+.contact-form label {
   color: #d8d8d8;
   font-size: 20px;
   font-weight: 500;
 }
 
-.contactRight input {
+.contact-form input {
   border: none;
   width: 700px;
   height: 70px;
@@ -87,7 +87,7 @@
   font-size: 20px;
 }
 
-.contactRight textarea {
+.contact-form textarea {
   width: 650px;
   border: none;
   padding: 20px;
@@ -121,12 +121,12 @@
     margin: 50px 70px;
     align-items: start;
   }
-  .contactTitle h1 {
+  .contact-title h1 {
     padding: 0;
     font-size: 50px;
     font-weight: 600;
   }
-  .contactSection {
+  .contact-section {
     flex-direction: column;
   }
   .contactLeft h1 {
@@ -138,14 +138,14 @@
   .contactDetail {
     gap: 20px;
   }
-  .contactRight label {
+  .contact-form label {
     font-size: 20px;
   }
-  .contactRight input {
+  .contact-form input {
     width: 100%;
     font-size: 20px;
   }
-  .contactRight textarea {
+  .contact-form textarea {
     width: 95%;
     font-size: 20px;
   }

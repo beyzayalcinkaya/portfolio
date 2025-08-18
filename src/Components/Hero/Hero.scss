@@ -1,5 +1,5 @@
 @use "../../styles/mixins/mixins" as mix;
-@use "../../styles/animation/animation" as animation;
+@use "../../styles/animation/animation" as ani;
 
 .home-nav-item {
     opacity: 0;
@@ -7,12 +7,12 @@
     transform: translateY(-100px);
 }
 
-@include mix.animation-delays("home-delay", 5, 1.3s);
+@include ani.animation-delays("home-delay", 5, 1.3s);
 
 .hero {
     @include mix.flex-center;
     margin-top: 7rem;
-    margin-bottom: 14rem;
+    margin-bottom: 9rem;
     gap: 10rem;
 
     .intro {
@@ -151,7 +151,7 @@
 
     @include mix.responsive(phone) {
         margin-bottom: 5rem;
-        @include mix.animation-delays("home-delay", 5, 0.2s);
+        @include ani.animation-delays("home-delay", 5, 0.2s);
         @include mix.flex-column;
         @include mix.justify-align-center;
     }

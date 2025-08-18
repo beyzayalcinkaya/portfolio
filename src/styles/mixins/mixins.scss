@@ -31,14 +31,19 @@
     text-decoration: none;
     list-style: none;
 }
-@mixin link{
+@mixin link{ 
   text-decoration: none;
   color: white;
-}
+} 
 
 @mixin gradient-color-orange{
     background: linear-gradient(45deg, #ff8a00, #eea34e);
 }
+@mixin gradient-background-green{
+  background-image: linear-gradient(45deg, rgb(11, 61, 17), rgb(128, 201, 108));
+}
+
+
 @mixin gradient-text{
     -webkit-background-clip: text; 
     background-clip: text;

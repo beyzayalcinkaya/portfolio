@@ -1,5 +1,5 @@
 @use "../../styles/mixins/mixins" as mix;
-@use "../../styles/animation/animation" as animation;
+@use "../../styles/animation/animation" as ani;
 
 .nav-item {
     opacity: 0;
@@ -7,7 +7,7 @@
     transform: translateY(-30px);
 }
 
-@include mix.animation-delays("delay", 6, 0.2s);
+@include ani.animation-delays("delay", 6, 0.2s);
 
 .navbar {
     width: 100%;

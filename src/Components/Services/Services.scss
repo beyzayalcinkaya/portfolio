@@ -1,0 +1,68 @@
+@use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as animation;
+
+section {
+    margin-top: 5rem;
+    .services-title {
+        h1 {
+            text-align: center;
+            margin-bottom: 7rem;
+            font-size: 4rem;
+            @include mix.gradient-color-mix2;
+            @include mix.gradient-text;
+        }
+    }
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        .services-desc {
+            background-color: #333;
+            padding: 4rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-30px);
+                @include mix.gradient-background-green;
+            }
+        }
+    }
+    @include mix.responsive(phone) {
+        .services-title h1 {
+            font-size: 3rem;
+        }
+        .services-container {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 1rem;
+
+            scroll-snap-type: x mandatory;
+            justify-content: flex-start;
+            padding: 1rem;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .services-desc {
+                width: 310px;
+            }
+        }
+        .services-desc {
+            flex: 0 0 80%;
+            scroll-snap-align: center;
+            margin: 0 auto;
+        }
+        //.services-title h1{
+        //margin-bottom: 4rem;
+        //font-size: 3rem;
+        //}
+        //.services-container .services-desc{
+        //width: 310px;
+        //}
+    }
+}
