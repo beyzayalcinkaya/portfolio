@@ -7,26 +7,12 @@
     transform: translateY(-100px);
 }
 
-.home-delay-1 {
-    animation-delay: 1.3s;
-}
-.home-delay-2 {
-    animation-delay: 1.5s;
-}
-.home-delay-3 {
-    animation-delay: 1.7s;
-}
-.home-delay-4 {
-    animation-delay: 1.9s;
-}
-.home-delay-5 {
-    animation-delay: 2.1s;
-}
+@include mix.animation-delays("home-delay", 5, 1.3s);
 
 .hero {
     @include mix.flex-center;
-    margin-top: 5rem;
-    margin-bottom: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 14rem;
     gap: 10rem;
 
     .intro {
@@ -164,22 +150,8 @@
     }
 
     @include mix.responsive(phone) {
-        .home-delay-1 {
-            animation-delay: 0.2s;
-        }
-        .home-delay-2 {
-            animation-delay: 0.4s;
-        }
-        .home-delay-3 {
-            animation-delay: 0.6s;
-        }
-        .home-delay-4 {
-            animation-delay: 0.8s;
-        }
-        .home-delay-5 {
-            animation-delay: 1s;
-        }
-
+        margin-bottom: 5rem;
+        @include mix.animation-delays("home-delay", 5, 0.2s);
         @include mix.flex-column;
         @include mix.justify-align-center;
     }

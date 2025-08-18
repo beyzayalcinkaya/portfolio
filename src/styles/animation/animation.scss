@@ -7,3 +7,13 @@
       transform: translateY(0);
     }
   }
+
+
+
+  @mixin animation-delays($prefix, $count, $start: 0.2s, $step: 0.2s) {
+    @for $i from 1 through $count {
+      .#{$prefix}-#{$i} {
+        animation-delay: $start + ($i - 1) * $step;
+      }
+    }
+  }

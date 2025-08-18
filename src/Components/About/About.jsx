@@ -1,20 +1,22 @@
 import React from "react";
 import aboutImage from "../../assets/aboutimg.png";
-import pageIcon from "../../assets/pageIcon.png";
 import "./About.css";
 
 const About = () => {
   return (
     <section id="about" className="about">
-      <div className="aboutTitle">
-        <h1>About Me</h1>
+      <div className="about-title">
+        <h1 className="about-nav-item about-delay-1">About Me</h1>
       </div>
-      <div className="aboutSection">
-        <div className="aboutLeft">
-          <img src={aboutImage} className="aboutProfilImage" />
+      <div className="about-section">
+        <div className="about-left">
+          <img
+            src={aboutImage}
+            className="about-profil-image about-nav-item about-delay-2"
+          />
         </div>
-        <div className="aboutRight">
-          <div className="aboutPara">
+        <div className="about-right">
+          <div className="about-para about-nav-item about-delay-3">
             <p>
               My interest in software development was shaped by my engineering
               education. I work in web and mobile technologies, with a
@@ -30,21 +32,34 @@ const About = () => {
               attention to detail and delivering value to the end user.
             </p>
           </div>
-          <div className="aboutSkills">
-            <div className="aboutSkill">
-              <p>HTML & CSS</p> <hr style={{ width: "100%" }} />
+          <div className="about-skills">
+            <div className="about-skill about-nav-item about-delay-4">
+              <p>HTML & CSS</p>
+              <div className="skill-bar">
+                <hr className="skill-bg" />
+                <hr className="skill-fill" style={{ width: "80%" }} />
+              </div>
             </div>
-            <div className="aboutSkill">
+            <div className="about-skill about-nav-item about-delay-5">
               <p>JAVASCRİPT</p>
-              <hr style={{ width: "60%" }} />
+              <div className="skill-bar">
+                <hr className="skill-bg" />
+                <hr className="skill-fill" style={{ width: "80%" }} />
+              </div>
             </div>
-            <div className="aboutSkill">
+            <div className="about-skill about-nav-item about-delay-6">
               <p>REACT JS</p>
-              <hr style={{ width: "80%" }} />
+              <div className="skill-bar">
+                <hr className="skill-bg" />
+                <hr className="skill-fill" style={{ width: "70%" }} />
+              </div>
             </div>
-            <div className="aboutSkill">
+            <div className="about-skill about-nav-item about-delay-7">
               <p>REACT NATİVE</p>
-              <hr style={{ width: "85%" }} />
+              <div className="skill-bar">
+                <hr className="skill-bg" />
+                <hr className="skill-fill" style={{ width: "50%" }} />
+              </div>
             </div>
           </div>
         </div>

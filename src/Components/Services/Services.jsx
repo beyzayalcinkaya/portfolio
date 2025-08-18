@@ -5,10 +5,9 @@ import Services_Data from "../../assets/services_data.js";
 
 const Services = () => {
   return (
-    <div id="services" className="services">
+    <section id="services" className="services">
       <div className="servicesTitle">
         <h1>My Services</h1>
-        <img src="" className="image" />
       </div>
       <div className="servicesContainer">
         {Services_Data.map((service, index) => {
@@ -21,7 +20,7 @@ const Services = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
