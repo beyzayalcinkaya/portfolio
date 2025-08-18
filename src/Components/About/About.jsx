@@ -1,14 +1,13 @@
 import React from "react";
-import "./About.css";
 import aboutImage from "../../assets/aboutimg.png";
 import pageIcon from "../../assets/pageIcon.png";
+import "./About.css";
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <section id="about" className="about">
       <div className="aboutTitle">
         <h1>About Me</h1>
-        <img src={pageIcon} className="aboutImage" />
       </div>
       <div className="aboutSection">
         <div className="aboutLeft">
@@ -17,7 +16,6 @@ const About = () => {
         <div className="aboutRight">
           <div className="aboutPara">
             <p>
-              {" "}
               My interest in software development was shaped by my engineering
               education. I work in web and mobile technologies, with a
               particular focus on frontend development, and I closely follow the
@@ -34,41 +32,24 @@ const About = () => {
           </div>
           <div className="aboutSkills">
             <div className="aboutSkill">
-              {" "}
-              <p>HTML & CSS</p> <hr style={{ width: "100%" }} />{" "}
+              <p>HTML & CSS</p> <hr style={{ width: "100%" }} />
             </div>
             <div className="aboutSkill">
               <p>JAVASCRİPT</p>
-              <hr style={{ width: "75%" }} />
+              <hr style={{ width: "60%" }} />
             </div>
             <div className="aboutSkill">
               <p>REACT JS</p>
-              <hr style={{ width: "70%" }} />
+              <hr style={{ width: "80%" }} />
             </div>
             <div className="aboutSkill">
               <p>REACT NATİVE</p>
-              <hr style={{ width: "66%" }} />
+              <hr style={{ width: "85%" }} />
             </div>
           </div>
         </div>
       </div>
-      <div className="aboutAchs">
-        <div className="aboutAcht">
-          <h1>1+</h1>
-          <p>YEARS OF EXPERIANCE</p>
-        </div>
-        <hr />
-        <div className="aboutAcht">
-          <h1>5+</h1>
-          <p>PROJECTS COMPLETED</p>
-        </div>
-        <hr />
-        <div className="aboutAcht">
-          <h1>10+</h1>
-          <p>HAPPY CLIENTS</p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 export default About;
