@@ -1,0 +1,97 @@
+@use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as ani;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    .contact-title {
+        margin-bottom: 2rem;
+        text-align: center;
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 4rem;
+            font-size: 4rem;
+            @include mix.gradient-color-mix2;
+            @include mix.gradient-text;
+        }
+    }
+    .contact-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            background: #444;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+            label {
+                font-size: 1rem;
+                @include mix.gradient-color-mix2;
+                @include mix.gradient-text;
+                padding: 1rem;
+                font-weight: 900;
+
+            }
+            input {
+                color: #fff;
+                padding: 1rem;
+                background-color: #222;
+                background: none;
+                border: 1px solid white;
+                border-radius: 5px;
+                height: 3rem;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 1rem;
+                border-radius: 8px;
+                font-size: 1rem;
+                background-color: #444;
+                border: 1px solid white;
+                color: white;
+            }
+            textarea {
+                resize: none;
+                min-height: 120px;
+            }
+            .contact-submit {
+                margin-top: 2rem;
+                padding: 0.9rem;
+                @include mix.gradient-background-green;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+    @include mix.responsive(midTablet) {
+        .contact-title h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+    @include mix.responsive(phone) {
+        .contact-title h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+        .contact-section {
+            padding: 1rem;
+        }
+    }
+}

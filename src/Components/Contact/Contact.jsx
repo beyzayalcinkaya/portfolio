@@ -33,6 +33,7 @@ const Contact = () => {
         <form onSubmit={onSubmit} className="contact-form">
           <label htmlFor="">Your Name</label>
           <input type="text" placeholder="Enter Your Name" name="name" />
+
           <label htmlFor="">Your Email</label>
           <input type="text" placeholder="Enter Your Email" name="email" />
           <label htmlFor="">Write Your Message Here</label>
@@ -41,7 +42,7 @@ const Contact = () => {
             rows="8"
             placeholder="Enter Your Message"
           ></textarea>
-          <button type="submit" className="contactSubmit">
+          <button type="submit" className="contact-submit">
             Submit Now
           </button>
         </form>

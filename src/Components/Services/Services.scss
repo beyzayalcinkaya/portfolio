@@ -1,7 +1,7 @@
 @use "../../styles/mixins/mixins" as mix;
 @use "../../styles/animation/animation" as animation;
 
-section {
+.services {
     margin-top: 5rem;
     .services-title {
         h1 {

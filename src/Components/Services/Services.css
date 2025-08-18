@@ -7,10 +7,10 @@
     transform: translateY(0);
   }
 }
-section {
+.services {
   margin-top: 5rem;
 }
-section .services-title h1 {
+.services .services-title h1 {
   text-align: center;
   margin-bottom: 7rem;
   font-size: 4rem;
@@ -19,13 +19,13 @@ section .services-title h1 {
   background-clip: text;
   color: transparent;
 }
-section .services-container {
+.services .services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
 }
-section .services-container .services-desc {
+.services .services-container .services-desc {
   background-color: #333;
   padding: 4rem;
   border-radius: 16px;
@@ -34,15 +34,15 @@ section .services-container .services-desc {
   width: 400px;
   transition: transform 0.3s;
 }
-section .services-container .services-desc:hover {
+.services .services-container .services-desc:hover {
   transform: translateY(-30px);
   background-image: linear-gradient(45deg, rgb(11, 61, 17), rgb(128, 201, 108));
 }
 @media (max-width: 768px) {
-  section .services-title h1 {
+  .services .services-title h1 {
     font-size: 3rem;
   }
-  section .services-container {
+  .services .services-container {
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 1rem;
@@ -50,13 +50,13 @@ section .services-container .services-desc:hover {
     justify-content: flex-start;
     padding: 1rem;
   }
-  section .services-container::-webkit-scrollbar {
+  .services .services-container::-webkit-scrollbar {
     display: none;
   }
-  section .services-container .services-desc {
+  .services .services-container .services-desc {
     width: 310px;
   }
-  section .services-desc {
+  .services .services-desc {
     flex: 0 0 80%;
     scroll-snap-align: center;
     margin: 0 auto;
