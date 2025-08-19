@@ -13,16 +13,16 @@ const Hero = () => {
         />
         <h1 className="home-nav-item home-delay-2">
           <p className="name">I'm Beyza Yalçınkaya,</p>
-          <p className="role">software developer based in Turkey.</p>
+          <p className="role">a software developer based in Turkey.</p>
         </h1>
       </div>
       <div className="lets-talk">
         <header className="desc">
           <h2 className="title home-nav-item home-delay-3">Let's Talk</h2>
           <p className="home-nav-item home-delay-4">
-            I'm currently available to take on new projects, so feel free to
-            send me a message about anything you’d like me to work on. You can
-            contact me anytime.
+            I’m currently open to new projects. Feel free to reach out if you’d
+            like to discuss any ideas or opportunities. I’m always happy to
+            connect.
           </p>
         </header>
 

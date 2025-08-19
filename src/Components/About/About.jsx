@@ -18,18 +18,18 @@ const About = () => {
         <div className="about-right">
           <div className="about-para about-nav-item about-delay-3">
             <p>
-              My interest in software development was shaped by my engineering
-              education. I work in web and mobile technologies, with a
-              particular focus on frontend development, and I closely follow the
-              latest trends. In every line of code I write, I prioritize user
-              experience and aesthetics.
+              My interest in software development stems from my engineering
+              education. I specialize in web and mobile technologies, with a
+              particular focus on frontend development, and I stay up-to-date
+              with the latest trends. In every line of code I write, I
+              prioritize both user experience and design aesthetics.
             </p>
             <p>
-              I approach every project not only with technical knowledge, but
-              also with high motivation, a sense of aesthetics, and a
-              user-focused perspective. While developing products with React,
-              modern web tools, and mobile technologies, I prioritize both
-              attention to detail and delivering value to the end user.
+              I approach each project not only with technical expertise but also
+              with motivation, a sense of design, and a user-centered mindset.
+              While developing products using React, modern web tools, and
+              mobile technologies, I focus on attention to detail and delivering
+              real value to the end user.
             </p>
           </div>
           <div className="about-skills">

@@ -31,6 +31,10 @@
                 @include mix.gradient-background-green;
             }
         }
+        p{
+            padding: 1rem;
+            line-height: 1.3;
+        }
     }
     @include mix.responsive(phone) {
         .services-title h1 {
