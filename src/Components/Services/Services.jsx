@@ -1,6 +1,6 @@
 import React from "react";
 import Services_Data from "../../data/services_data";
-import "./Services.css";
+import "./Services.scss";
 
 const Services = () => {
   return (

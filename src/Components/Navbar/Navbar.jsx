@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home"); // TODO

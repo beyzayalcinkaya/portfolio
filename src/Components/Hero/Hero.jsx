@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../../assets/homePageImage.jpeg";
-import "./Hero.css";
+import "./Hero.scss";
 
 const Hero = () => {
   return (
