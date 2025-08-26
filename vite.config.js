@@ -13,4 +13,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/portfolio/",
   plugins: [react()],
+  css: {
+    devSourcemap: false, // Development'ta source map'leri kapatır
+  },
+  build: {
+    sourcemap: false, // Production build'de source map'leri kapatır
+  },
 });
