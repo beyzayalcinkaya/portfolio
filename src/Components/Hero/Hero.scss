@@ -11,9 +11,15 @@
 
 .hero {
     @include mix.flex-center;
-    margin-top: 7rem;
-    margin-bottom: 9rem;
-    gap: 10rem;
+    margin-top: 4rem;
+    // margin-bottom: 9rem;
+    min-height: calc(100vh - 20px); //BURAYI KONTROL ET
+    text-align: center;
+
+    .container {
+        @include mix.flex-center;
+        flex-direction: column;
+    }
 
     .intro {
         @include mix.flex-column;
@@ -43,7 +49,53 @@
         }
     }
 
-    .lets-talk {
+    @include mix.responsive(tablet) {
+        gap: 7rem;
+
+        .intro {
+            img {
+                width: 240px;
+                height: 300px;
+            }
+
+            h1 {
+                .name {
+                    font-size: 2.2rem;
+                }
+                .role {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    @include mix.responsive(midTablet) {
+        gap: 5rem;
+        .intro {
+            img {
+                width: 220px;
+                height: 280px;
+            }
+
+            h1 {
+                .name {
+                    font-size: 2rem;
+                }
+                .role {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @include mix.responsive(phone) {
+        margin-top: 2rem;
+        @include ani.animation-delays("home-delay", 5, 0.2s);
+        @include mix.flex-column;
+        @include mix.justify-align-center;
+    }
+}
+
+/*.lets-talk {
         @include mix.flex-column;
         gap: 3rem;
         .desc {
@@ -74,85 +126,4 @@
                 @include mix.link;
             }
         }
-    }
-
-    @include mix.responsive(tablet) {
-        gap: 7rem;
-
-        .intro {
-            img {
-                width: 240px;
-                height: 300px;
-            }
-
-            h1 {
-                .name {
-                    font-size: 2.2rem;
-                }
-                .role {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-
-        .lets-talk {
-            .desc {
-                gap: 1rem;
-                h2 {
-                    font-size: 2.3rem;
-                }
-                p {
-                    font-size: 1.1rem;
-                    max-width: 300px;
-                }
-            }
-            .contact-info {
-                p {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
-    @include mix.responsive(midTablet) {
-        gap: 5rem;
-        .intro {
-            img {
-                width: 220px;
-                height: 280px;
-            }
-
-            h1 {
-                .name {
-                    font-size: 2rem;
-                }
-                .role {
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        .lets-talk {
-            .desc {
-                h2 {
-                    font-size: 2rem;
-                }
-                p {
-                    font-size: 1rem;
-                    max-width: 230px;
-                }
-            }
-            .contact-info {
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-
-    @include mix.responsive(phone) {
-        margin-bottom: 5rem;
-        @include ani.animation-delays("home-delay", 5, 0.2s);
-        @include mix.flex-column;
-        @include mix.justify-align-center;
-    }
-}
+    }*/

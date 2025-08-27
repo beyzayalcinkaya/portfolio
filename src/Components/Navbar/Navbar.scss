@@ -10,10 +10,22 @@
 @include ani.animation-delays("delay", 6, 0.2s);
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 128, 0, 0.2);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
     width: 100%;
-    @include mix.flex-btw;
-    margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: 1rem 0;
+
+    .nav-content {
+        @include mix.flex-btw;
+        align-items: center;
+        max-width: 1200px; // içerik genişliğini sınırla
+        margin: 0 auto;    // ortala
+        padding: 0 2rem;
+    }
 
     .menu-btn {
         display: none;
@@ -21,14 +33,15 @@
         border: none;
         outline: none;
         color: white;
+
     }
     .title {
         white-space: nowrap;
 
         .material-symbols-outlined {
             color: green;
-            margin: 0 3rem;
-            font-size: 50px;
+            margin: 0 1rem;
+            font-size: 30px;
             transition: all 1s;
 
             &:hover {
@@ -52,6 +65,7 @@
 
     li {
         margin: 0 2rem;
+        font-weight: 700;
 
         &:hover {
             color: rgb(80, 230, 80);
@@ -62,7 +76,7 @@
 
     .navConnect {
         @include mix.gradient-color-mix;
-        padding: 1rem 2rem;
+        padding: 1rem;
         border-radius: 100px;
         transition: all 1s;
 
@@ -74,9 +88,15 @@
     }
 
     @include mix.responsive(phone) {
+        background-color: transparent;
+        .nav-content .title .material-symbols-outlined{
+            display: none;
+        }
+        
         .menu-btn {
             display: block;
-            z-index: 2;
+            z-index: 1100;
+            
         }
         .nav-menu {
             display: none;
@@ -95,7 +115,8 @@
             background: rgba(0, 128, 0, 0.2);
             backdrop-filter: blur(8px);
             padding: 2rem 1rem;
-            z-index: 1;
+            z-index: 1050;  
+    
         }
         li {
             margin: 0;
@@ -104,13 +125,9 @@
         }
     }
     @include mix.responsive(midTablet) {
-        padding: 1rem 0rem;
 
         .title .myName {
             font-size: 25px;
-        }
-        .title .material-symbols-outlined {
-            font-size: 20px;
         }
         .nav-menu li {
             margin: 0 1rem;
@@ -121,19 +138,14 @@
     }
 
     @include mix.responsive(tablet) {
-        padding: 1rem 2rem;
 
         .title .myName {
             font-size: 35px;
         }
 
-        .title .material-symbols-outlined {
-            font-size: 40px;
-            margin: 0 2rem;
-        }
-
-        .nav-menu li {
-            margin: 0 2rem;
-        }
+      //  .title .material-symbols-outlined {
+            //font-size: 40px;
+            //margin: 0 2rem;
+      //  }
     }
 }
