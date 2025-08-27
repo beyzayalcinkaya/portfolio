@@ -1,18 +1,11 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footerTop"></div>
-      <hr />
       <div className="footerButtom">
         <p>© 2025 Beyza Yalçınkaya. All rights reserved.</p>
-        <div className="footerBottomRight">
-          <p>Term Of Services</p>
-          <p>Privacy Policy</p>
-          <p>Contact with me</p>
-        </div>
       </div>
     </div>
   );

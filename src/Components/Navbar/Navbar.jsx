@@ -30,24 +30,24 @@ const Navbar = () => {
           </li>
 
           <li className="nav-item delay-3">
-            <AnchorLink className="anchorLink" offset={50} href="#about">
+            <AnchorLink className="anchorLink" offset={40} href="#about">
               About&nbsp;Me
             </AnchorLink>
           </li>
           <li className="nav-item delay-4">
-            <AnchorLink className="anchorLink" offset={50} href="#services">
+            <AnchorLink className="anchorLink" offset={40} href="#services">
               Services
             </AnchorLink>
           </li>
 
           <li className="nav-item delay-5">
-            <AnchorLink className="anchorLink" offset={50} href="#contact">
+            <AnchorLink className="anchorLink" offset={40} href="#contact">
               Contact
             </AnchorLink>
           </li>
         </ul>
         <div className="navConnect nav-item delay-6 ">
-          <AnchorLink className="anchorLink" offset={50} href="#contact">
+          <AnchorLink className="anchorLink" offset={40} href="#contact">
             Contact&nbsp;Me
           </AnchorLink>
         </div>

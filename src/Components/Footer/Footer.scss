@@ -1,0 +1,15 @@
+@use "../../styles/mixins/mixins" as mix;
+.footer {
+    bottom: 0;
+    color: #888; // hoş bir renk, örnek gradient veya tek renk olabilir
+    font-size: 1rem; // okunaklı bir punto
+    font-weight: 600;
+    padding: 2rem 0;
+  
+
+    @include mix.responsive(phone){
+        display: none;
+      }
+  }
+
+
