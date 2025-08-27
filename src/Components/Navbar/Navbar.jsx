@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,7 +27,7 @@ const Navbar = () => {
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li className="nav-item delay-2">
             <AnchorLink className="anchorLink" href="#home">
-              Home
+              {t("home")}
             </AnchorLink>
           </li>
 

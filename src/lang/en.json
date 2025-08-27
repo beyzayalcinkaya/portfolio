@@ -1,8 +1,6 @@
 {
-    "home": "Home",
-    "aboutMe": "About Me",
-    "services":"Services",
-    "Portfolio":"Portfolio",
-    "contact": "Contact",
-    "navconnect":"Connect With Me"
-  }
+  "home": "Home",
+  "about": "About Me",
+  "services": "My Services",
+  "contact": "Contact"
+}
