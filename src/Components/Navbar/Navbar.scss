@@ -74,18 +74,6 @@
         }
     }
 
-    .navConnect {
-        @include mix.gradient-color-mix;
-        padding: 1rem;
-        border-radius: 100px;
-        transition: all 1s;
-
-        &:hover {
-            transform: rotate(360deg);
-            filter: drop-shadow(0 4px 8px orange);
-            @include mix.gradient-color-orange;
-        }
-    }
 
     @include mix.responsive(phone) {
         background-color: transparent;
@@ -101,9 +89,7 @@
         .nav-menu {
             display: none;
         }
-        .navConnect {
-            display: none;
-        }
+
         .nav-menu.open {
             display: flex;
             flex-direction: column;
@@ -112,8 +98,10 @@
             right: 0;
             height: 100vh;
             width: 220px;
-            background: rgba(0, 128, 0, 0.2);
-            backdrop-filter: blur(8px);
+            background: rgba(0, 50, 0, 0.8);
+            backdrop-filter: blur(3px);
+
+            
             padding: 2rem 1rem;
             z-index: 1050;  
     
@@ -132,9 +120,6 @@
         .nav-menu li {
             margin: 0 1rem;
         }
-        .navConnect {
-            padding: 1rem 1rem;
-        }
     }
 
     @include mix.responsive(tablet) {
@@ -142,10 +127,5 @@
         .title .myName {
             font-size: 35px;
         }
-
-      //  .title .material-symbols-outlined {
-            //font-size: 40px;
-            //margin: 0 2rem;
-      //  }
     }
 }

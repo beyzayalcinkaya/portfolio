@@ -7,17 +7,13 @@
     transform: translateX(150px);
 }
 
-
-@include ani.animation-delays("about-delay", 7 ,0.2s);
+@include ani.animation-delays("about-delay", 7, 0.2s);
 
 .about {
-    
-    //padding: 5rem 8rem;
     padding: 2rem 0;
     .about-title h1 {
         text-align: center;
-       // margin-bottom: 3rem; burayı sildik
-       margin-bottom: 2rem;
+        margin-bottom: 2rem;
         font-size: 4rem;
         @include mix.gradient-color-mix2;
         @include mix.gradient-text;
@@ -27,7 +23,6 @@
         align-items: center;
         justify-content: center;
         gap: 4rem;
-       // padding: 3rem 2rem;
         padding: 3rem 0;
         .about-left {
             flex: 2;
@@ -42,7 +37,6 @@
             }
         }
         .about-right {
-
             display: flex;
             flex-direction: column;
             align-items: normal;
@@ -96,10 +90,8 @@
     }
 
     @include mix.responsive(tablet) {
-        //padding: 3rem 4rem;
         .about-title h1 {
             margin-bottom: 2rem;
-            
         }
         .about-section {
             padding: 2rem 0rem;
@@ -131,9 +123,9 @@
     }
 
     @include mix.responsive(phone) {
-.about-title h1{
-    font-size: 3rem;
-}
+        .about-title h1 {
+            font-size: 3rem;
+        }
         .about-section {
             padding: 0rem;
             gap: 0;

@@ -1,12 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import aboutImage from "../../assets/aboutimg.png";
 import "./About.scss";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="about">
       <div className="about-title">
-        <h1 className="about-nav-item about-delay-1">About Me</h1>
+        <h1 className="about-nav-item about-delay-1">{t("aboutTitle")}</h1>
       </div>
       <div className="about-section">
         <div className="about-left">
@@ -17,20 +19,8 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para about-nav-item about-delay-3">
-            <p>
-              My interest in software development stems from my engineering
-              education. I specialize in web and mobile technologies, with a
-              particular focus on frontend development, and I stay up-to-date
-              with the latest trends. In every line of code I write, I
-              prioritize both user experience and design aesthetics.
-            </p>
-            <p>
-              I approach each project not only with technical expertise but also
-              with motivation, a sense of design, and a user-centered mindset.
-              While developing products using React, modern web tools, and
-              mobile technologies, I focus on attention to detail and delivering
-              real value to the end user.
-            </p>
+            <p>{t("aboutPara1")}</p>
+            <p>{t("aboutPara2")}</p>
           </div>
           <div className="about-skills">
             <div className="about-skill about-nav-item about-delay-4">

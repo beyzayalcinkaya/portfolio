@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import profileImage from "../../assets/homePageImage.jpeg";
 import "./Hero.scss";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -13,8 +15,8 @@ const Hero = () => {
             alt="Beyza Yalçınkaya"
           />
           <h1 className="home-nav-item home-delay-2">
-            <p className="name">I'm Beyza Yalçınkaya,</p>
-            <p className="role">a software developer based in Turkey.</p>
+            <p className="name">{t("name")}</p>
+            <p className="role">{t("role")}</p>
           </h1>
         </div>
       </div>

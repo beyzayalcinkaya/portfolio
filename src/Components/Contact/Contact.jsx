@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Contact.scss";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -27,23 +29,23 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact-title">
-        <h1>Get In Touch</h1>
+        <h1>{t("getInTouch")}</h1>
       </div>
       <div className="contact-section">
         <form onSubmit={onSubmit} className="contact-form">
-          <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter Your Name" name="name" />
+          <label htmlFor="">{t("nameLabel")}</label>
+          <input type="text" placeholder={t("namePlaceholder")} name="name" />
 
-          <label htmlFor="">Your Email</label>
-          <input type="text" placeholder="Enter Your Email" name="email" />
-          <label htmlFor="">Write Your Message Here</label>
+          <label htmlFor="">{t("emailLabel")}</label>
+          <input type="text" placeholder={t("emailPlaceholder")} name="email" />
+          <label htmlFor="">{t("messageLabel")}</label>
           <textarea
             name="message"
             rows="8"
-            placeholder="Enter Your Message"
+            placeholder={t("messagePlaceholder")}
           ></textarea>
           <button type="submit" className="contact-submit">
-            Submit Now
+            {t("submitButton")}
           </button>
         </form>
       </div>

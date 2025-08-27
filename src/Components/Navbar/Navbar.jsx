@@ -33,26 +33,21 @@ const Navbar = () => {
 
           <li className="nav-item delay-3">
             <AnchorLink className="anchorLink" offset={40} href="#about">
-              About&nbsp;Me
+              {t("about")}
             </AnchorLink>
           </li>
           <li className="nav-item delay-4">
             <AnchorLink className="anchorLink" offset={40} href="#services">
-              Services
+              {t("services")}
             </AnchorLink>
           </li>
 
           <li className="nav-item delay-5">
             <AnchorLink className="anchorLink" offset={40} href="#contact">
-              Contact
+              {t("contact")}
             </AnchorLink>
           </li>
         </ul>
-        <div className="navConnect nav-item delay-6 ">
-          <AnchorLink className="anchorLink" offset={40} href="#contact">
-            Contact&nbsp;Me
-          </AnchorLink>
-        </div>
       </div>
     </nav>
   );

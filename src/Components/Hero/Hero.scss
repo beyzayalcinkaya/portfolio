@@ -11,9 +11,10 @@
 
 .hero {
     @include mix.flex-center;
-    margin-top: 4rem;
-    //min-height: calc(100vh - 40px); //BURAYI KONTROL ET
-    padding: 8rem 0;
+    margin-top: 5rem;
+    padding: 7rem 0;
+   
+
     text-align: center;
 
     .container {
@@ -54,6 +55,7 @@
     }
 
     @include mix.responsive(tablet) {
+        padding: 5rem 0;
        
 
         .intro {
@@ -91,7 +93,8 @@
     }
 
     @include mix.responsive(phone) {
-        margin-top: 1rem;
+        padding: 4rem 0;
+
         @include ani.animation-delays("home-delay", 5, 0.2s);
         @include mix.flex-column;
         @include mix.justify-align-center;

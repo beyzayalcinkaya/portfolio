@@ -57,6 +57,7 @@
     @else if $breakpoint == midTablet {
         @media (max-width: 990px) { @content; }
       }
+
     @else if $breakpoint == tablet {
       @media (max-width: 1060px) { @content; }
     }
