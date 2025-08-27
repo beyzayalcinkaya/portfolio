@@ -2,11 +2,11 @@
 @use "../../styles/animation/animation" as animation;
 
 .services {
-    margin-top: 5rem;
+    margin-top: 4rem;
     .services-title {
         h1 {
             text-align: center;
-            margin-bottom: 7rem;
+            margin-bottom: 4rem;
             font-size: 4rem;
             @include mix.gradient-color-mix2;
             @include mix.gradient-text;
@@ -16,10 +16,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4rem;
+        gap: 2rem;
         .services-desc {
             background-color: #333;
-            padding: 4rem;
+            padding: 4rem 0rem;
             border-radius: 16px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -47,26 +47,18 @@
 
             scroll-snap-type: x mandatory;
             justify-content: flex-start;
-            padding: 1rem;
 
             &::-webkit-scrollbar {
                 display: none;
             }
             .services-desc {
                 width: 310px;
+                @include mix.gradient-background-green;
+                flex: 0 0 80%;
+                scroll-snap-align: center;
+                margin: 0 auto;
             }
         }
-        .services-desc {
-            flex: 0 0 80%;
-            scroll-snap-align: center;
-            margin: 0 auto;
-        }
-        //.services-title h1{
-        //margin-bottom: 4rem;
-        //font-size: 3rem;
-        //}
-        //.services-container .services-desc{
-        //width: 310px;
-        //}
+
     }
 }

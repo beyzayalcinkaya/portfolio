@@ -11,10 +11,13 @@
 @include ani.animation-delays("about-delay", 7 ,0.2s);
 
 .about {
-    padding: 5rem 8rem;
+    
+    //padding: 5rem 8rem;
+    padding: 5rem 0;
     .about-title h1 {
         text-align: center;
-        margin-bottom: 3rem;
+       // margin-bottom: 3rem; burayı sildik
+       margin-bottom: 2rem;
         font-size: 4rem;
         @include mix.gradient-color-mix2;
         @include mix.gradient-text;
@@ -24,7 +27,8 @@
         align-items: center;
         justify-content: center;
         gap: 4rem;
-        padding: 3rem 2rem;
+       // padding: 3rem 2rem;
+        padding: 3rem 0;
         .about-left {
             flex: 2;
             display: flex;
@@ -92,13 +96,15 @@
     }
 
     @include mix.responsive(tablet) {
-        padding: 3rem 4rem;
+        //padding: 3rem 4rem;
+        padding: 3rem 0;
         .about-title h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            
         }
         .about-section {
-            padding: 1rem 2rem;
+            padding: 2rem 0rem;
             .about-left img {
                 width: 265px;
                 height: 290px;
