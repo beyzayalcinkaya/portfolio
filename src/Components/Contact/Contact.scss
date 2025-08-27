@@ -6,7 +6,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 1rem;
+    //padding: 4rem 1rem;
+    padding: 4rem 0rem;
     .contact-title {
         margin-bottom: 2rem;
         text-align: center;
@@ -39,7 +40,7 @@
                 font-size: 1rem;
                 @include mix.gradient-color-mix2;
                 @include mix.gradient-text;
-                padding: 1rem;
+                padding: 1rem 0;
                 font-weight: 900;
 
             }
@@ -68,7 +69,7 @@
             }
             .contact-submit {
                 margin-top: 2rem;
-                padding: 0.9rem;
+                padding: 1rem;
                 @include mix.gradient-background-green;
                 color: #fff;
                 font-size: 1rem;
@@ -86,12 +87,12 @@
         }
     }
     @include mix.responsive(phone) {
+        padding:0;
         .contact-title h1 {
-            font-size: 2rem;
             margin-bottom: 0;
         }
         .contact-section {
-            padding: 1rem;
+            padding: 1rem 0;
         }
     }
 }

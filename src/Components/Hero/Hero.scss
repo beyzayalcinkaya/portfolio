@@ -12,8 +12,8 @@
 .hero {
     @include mix.flex-center;
     margin-top: 4rem;
-    // margin-bottom: 9rem;
-    min-height: calc(100vh - 20px); //BURAYI KONTROL ET
+    //min-height: calc(100vh - 40px); //BURAYI KONTROL ET
+    padding: 8rem 0;
     text-align: center;
 
     .container {
@@ -37,20 +37,24 @@
             @include mix.flex-column;
             @include mix.justify-align-center;
             gap: 1rem;
+            margin-bottom: 0;
             .name {
                 font-size: 3rem;
                 @include mix.gradient-color-mix2;
                 @include mix.gradient-text;
+                margin-bottom: 0;
+                
             }
             .role {
                 font-style: italic;
                 font-weight: 300;
+                margin-bottom: 0;
             }
         }
     }
 
     @include mix.responsive(tablet) {
-        gap: 7rem;
+       
 
         .intro {
             img {
@@ -69,7 +73,6 @@
         }
     }
     @include mix.responsive(midTablet) {
-        gap: 5rem;
         .intro {
             img {
                 width: 220px;
@@ -88,7 +91,7 @@
     }
 
     @include mix.responsive(phone) {
-        margin-top: 2rem;
+        margin-top: 1rem;
         @include ani.animation-delays("home-delay", 5, 0.2s);
         @include mix.flex-column;
         @include mix.justify-align-center;

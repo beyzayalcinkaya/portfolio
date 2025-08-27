@@ -13,7 +13,7 @@
 .about {
     
     //padding: 5rem 8rem;
-    padding: 5rem 0;
+    padding: 2rem 0;
     .about-title h1 {
         text-align: center;
        // margin-bottom: 3rem; burayı sildik
@@ -42,7 +42,7 @@
             }
         }
         .about-right {
-            display: 3;
+
             display: flex;
             flex-direction: column;
             align-items: normal;
@@ -97,9 +97,7 @@
 
     @include mix.responsive(tablet) {
         //padding: 3rem 4rem;
-        padding: 3rem 0;
         .about-title h1 {
-            font-size: 3rem;
             margin-bottom: 2rem;
             
         }
@@ -133,6 +131,9 @@
     }
 
     @include mix.responsive(phone) {
+.about-title h1{
+    font-size: 3rem;
+}
         .about-section {
             padding: 0rem;
             gap: 0;
