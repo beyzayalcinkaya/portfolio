@@ -22,8 +22,8 @@
     .nav-content {
         @include mix.flex-btw;
         align-items: center;
-        max-width: 1200px; // içerik genişliğini sınırla
-        margin: 0 auto;    // ortala
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 0 2rem;
     }
 
@@ -33,7 +33,6 @@
         border: none;
         outline: none;
         color: white;
-
     }
     .title {
         white-space: nowrap;
@@ -74,17 +73,15 @@
         }
     }
 
-
     @include mix.responsive(phone) {
         background-color: transparent;
-        .nav-content .title .material-symbols-outlined{
+        .nav-content .title .material-symbols-outlined {
             display: none;
         }
-        
+
         .menu-btn {
             display: block;
             z-index: 1100;
-            
         }
         .nav-menu {
             display: none;
@@ -101,11 +98,10 @@
             background: rgba(0, 50, 0, 0.8);
             backdrop-filter: blur(3px);
 
-            
             padding: 2rem 1rem;
-            z-index: 1050;  
-    
+            z-index: 1050;
         }
+
         li {
             margin: 0;
             top: 0;
@@ -113,7 +109,6 @@
         }
     }
     @include mix.responsive(midTablet) {
-
         .title .myName {
             font-size: 25px;
         }
@@ -123,7 +118,6 @@
     }
 
     @include mix.responsive(tablet) {
-
         .title .myName {
             font-size: 35px;
         }

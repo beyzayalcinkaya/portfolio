@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Navbar.scss";
+import LangSelect from "../LangSelect/LangSelect";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -47,6 +48,7 @@ const Navbar = () => {
               {t("contact")}
             </AnchorLink>
           </li>
+          <LangSelect />
         </ul>
       </div>
     </nav>
