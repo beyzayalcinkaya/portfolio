@@ -46,12 +46,12 @@ const App = () => {
                 <About />
                 <Services />
                 <Contact />
+                <Footer />
               </>
             }
           />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
