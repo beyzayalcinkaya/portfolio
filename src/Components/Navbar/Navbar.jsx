@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Navbar.scss";
 import LangSelect from "../LangSelect/LangSelect";
 
@@ -25,7 +26,7 @@ const Navbar = () => {
           </span>
         </button>
 
-        <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
+        {/**  <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li className="nav-item delay-2">
             <AnchorLink className="anchorLink" href="#home">
               {t("home")}
@@ -47,6 +48,35 @@ const Navbar = () => {
             <AnchorLink className="anchorLink" offset={40} href="#contact">
               {t("contact")}
             </AnchorLink>
+          </li>
+          <LangSelect />
+        </ul>  */}
+
+        <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
+          <li className="nav-item delay-2">
+            <HashLink smooth to="/#home">
+              {t("home")}
+            </HashLink>
+          </li>
+          <li className="nav-item delay-3">
+            <HashLink smooth to="/#about">
+              {t("about")}
+            </HashLink>
+          </li>
+          <li className="nav-item delay-4">
+            <HashLink smooth to="/#services">
+              {t("services")}
+            </HashLink>
+          </li>
+          <li className="nav-item delay-5">
+            <HashLink smooth to="/#contact">
+              {t("contact")}
+            </HashLink>
+          </li>
+          <li className="nav-item delay-6">
+            <Link className="anchorLink" to="/blog">
+              Blog
+            </Link>
           </li>
           <LangSelect />
         </ul>

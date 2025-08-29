@@ -1,6 +1,15 @@
 @use "../../styles/mixins/mixins" as mix;
 @use "../../styles/animation/animation" as ani;
 
+
+.item {
+    opacity: 0;
+    animation: animationSlide 0.5s forwards;
+    transform: translateX(150px);
+}
+
+@include ani.animation-delays("delay", 9, 0.5s);
+
 .contact {
     display: flex;
     flex-direction: column;

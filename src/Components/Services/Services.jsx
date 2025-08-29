@@ -7,10 +7,10 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <section id="services" className="services">
-      <div className="services-title">
+      <div className="services-title item delay-1">
         <h1>{t("myServices")}</h1>
       </div>
-      <div className="services-container">
+      <div className="services-container item delay-2">
         {Services_Data.map((service, index) => {
           return (
             <div key={index} className="services-desc">

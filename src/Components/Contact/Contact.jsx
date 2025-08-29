@@ -29,23 +29,40 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <div className="contact-title">
+      <div className="contact-title item delay-1">
         <h1>{t("getInTouch")}</h1>
       </div>
       <div className="contact-section">
-        <form onSubmit={onSubmit} className="contact-form">
-          <label htmlFor="">{t("nameLabel")}</label>
-          <input type="text" placeholder={t("namePlaceholder")} name="name" />
+        <form onSubmit={onSubmit} className="contact-form item delay-2">
+          <label htmlFor="" className="item delay-3">
+            {t("nameLabel")}
+          </label>
+          <input
+            type="text"
+            placeholder={t("namePlaceholder")}
+            name="name"
+            className="item delay-4"
+          />
 
-          <label htmlFor="">{t("emailLabel")}</label>
-          <input type="text" placeholder={t("emailPlaceholder")} name="email" />
-          <label htmlFor="">{t("messageLabel")}</label>
+          <label htmlFor="" className="item delay-5">
+            {t("emailLabel")}
+          </label>
+          <input
+            type="text"
+            placeholder={t("emailPlaceholder")}
+            name="email"
+            className="item delay-6"
+          />
+          <label htmlFor="" className="item delay-7">
+            {t("messageLabel")}
+          </label>
           <textarea
             name="message"
             rows="8"
             placeholder={t("messagePlaceholder")}
+            className="item delay-8"
           ></textarea>
-          <button type="submit" className="contact-submit">
+          <button type="submit" className="contact-submit item delay-9">
             {t("submitButton")}
           </button>
         </form>

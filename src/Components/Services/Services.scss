@@ -1,5 +1,13 @@
 @use "../../styles/mixins/mixins" as mix;
-@use "../../styles/animation/animation" as animation;
+@use "../../styles/animation/animation" as ani;
+
+.item {
+    opacity: 0;
+    animation: animationSlide 0.5s forwards;
+    transform: translateX(250px);
+}
+
+@include ani.animation-delays("delay", 2, 0.8s);
 
 .services {
     padding: 4rem 0;

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "React ile Başlamak",
+        "desc1": "React öğrenmeye yeni başlayanlar için ipuçları.",
+        "pageDesc": "Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz.Bu sayfada React ile ilgili detaylı içerikler bulabilirsiniz."
+    },
+    {
+        "id": 2,
+        "title": "ES6 Yenilikleri",
+        "desc1": "ES6 ile gelen yeni özellikleri keşfedin.",
+        "pageDesc": "Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var.Bu sayfada JavaScript ES6 hakkında örnekler ve açıklamalar var."
+    },
+    {
+        "id": 3,
+        "title": " Grid ve Flexbox",
+        "desc1": "Layout tasarımlarını kolaylaştıran teknikler.",
+        "pageDesc": "CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz.CSS Grid ve Flexbox kullanımıyla responsive tasarımlar yapabilirsiniz."
+    },
+    {
+        "id": 4,
+        "title": "Node.js Temelleri",
+        "desc1": "Backend geliştirme için Node.js öğrenin.",
+        "pageDesc": "Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş.Node.js ile sunucu tarafı programlamaya giriş."
+    }
+]

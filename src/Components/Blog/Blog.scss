@@ -1,0 +1,14 @@
+@use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as ani;
+.container-blog {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+
+

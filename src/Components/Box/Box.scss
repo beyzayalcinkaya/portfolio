@@ -1,0 +1,36 @@
+@use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as ani;
+.box {
+  
+  background-color: #333; 
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(189, 226, 189);
+    text-align: center; 
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  
+    &:hover {
+        @include mix.gradient-background-green;
+
+      transform: translateY(-5px);
+
+    }
+  
+    .text {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+    }
+  
+    .text-desc {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+
+  }
+  

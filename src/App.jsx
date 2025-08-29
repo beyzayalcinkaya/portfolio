@@ -1,4 +1,5 @@
-import React from "react";
+{
+  /** import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
@@ -18,4 +19,42 @@ const App = () => {
     </div>
   );
 };
+export default App; */
+}
+
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
+import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import Blog from "./Components/Blog/Blog";
+
+const App = () => {
+  return (
+    <Router>
+      <div className="container">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Services />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
 export default App;
