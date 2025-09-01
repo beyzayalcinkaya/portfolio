@@ -22,8 +22,5 @@ ul {
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-section {
-  scroll-margin-top: 70px;
+  margin-top: 80px;
 }

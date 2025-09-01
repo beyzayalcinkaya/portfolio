@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import "./Navbar.scss";
 import LangSelect from "../LangSelect/LangSelect";
 
@@ -17,6 +16,7 @@ const Navbar = () => {
       <div className="nav-content">
         <div className="title nav-item delay-1">
           <span className="material-symbols-outlined">cannabis</span>
+
           <span className="myName">Beyza</span>
         </div>
 
@@ -26,56 +26,32 @@ const Navbar = () => {
           </span>
         </button>
 
-        {/**  <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
-          <li className="nav-item delay-2">
-            <AnchorLink className="anchorLink" href="#home">
-              {t("home")}
-            </AnchorLink>
-          </li>
-
-          <li className="nav-item delay-3">
-            <AnchorLink className="anchorLink" offset={40} href="#about">
-              {t("about")}
-            </AnchorLink>
-          </li>
-          <li className="nav-item delay-4">
-            <AnchorLink className="anchorLink" offset={40} href="#services">
-              {t("services")}
-            </AnchorLink>
-          </li>
-
-          <li className="nav-item delay-5">
-            <AnchorLink className="anchorLink" offset={40} href="#contact">
-              {t("contact")}
-            </AnchorLink>
-          </li>
-          <LangSelect />
-        </ul>  */}
-
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li className="nav-item delay-2">
-            <HashLink smooth to="/#home">
+            <Link className="Link" to="/">
               {t("home")}
-            </HashLink>
+            </Link>
           </li>
+
           <li className="nav-item delay-3">
-            <HashLink smooth to="/#about">
+            <Link className="Link" to="/about">
               {t("about")}
-            </HashLink>
+            </Link>
           </li>
           <li className="nav-item delay-4">
-            <HashLink smooth to="/#services">
+            <Link className="Link" to="/services">
               {t("services")}
-            </HashLink>
+            </Link>
           </li>
+
           <li className="nav-item delay-5">
-            <HashLink smooth to="/#contact">
+            <Link className="Link" to="/contact">
               {t("contact")}
-            </HashLink>
+            </Link>
           </li>
           <li className="nav-item delay-6">
-            <Link className="anchorLink" to="/blog">
-              Blog
+            <Link className="Link" to="/blog">
+              {t("blog")}
             </Link>
           </li>
           <LangSelect />

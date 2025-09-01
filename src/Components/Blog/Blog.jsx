@@ -1,3 +1,4 @@
+// src/Components/Blog/Blog.jsx
 import React from "react";
 import Box from "../Box/Box";
 import blogData from "../../data/blog_data.json";
@@ -7,7 +8,12 @@ const Blog = () => {
   return (
     <div className="container-blog">
       {blogData.map((item) => (
-        <Box key={item.id} title={item.title} desc1={item.desc1} />
+        <Box
+          key={item.id}
+          name={item.name}
+          title={item.title}
+          desc1={item.desc1}
+        />
       ))}
     </div>
   );
