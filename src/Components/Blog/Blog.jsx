@@ -1,10 +1,18 @@
 // src/Components/Blog/Blog.jsx
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "../Box/Box";
-import blogData from "../../data/blog_data.json";
 import "./Blog.scss";
 
 const Blog = () => {
+  const [blogData, setBlogData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3002/blogs")
+      .then((res) => res.json())
+      .then((data) => setBlogData(data))
+      .catch((err) => console.error("Backend error:", err));
+  }, []);
+
   return (
     <div className="container-blog">
       {blogData.map((item) => (
