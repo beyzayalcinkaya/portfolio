@@ -18,6 +18,7 @@ const Blog = () => {
       {blogData.map((item) => (
         <Box
           key={item.id}
+          id={item.id}
           name={item.name}
           title={item.title}
           desc1={item.desc1}

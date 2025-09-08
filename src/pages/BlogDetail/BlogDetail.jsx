@@ -3,25 +3,27 @@ import { useParams } from "react-router-dom";
 import "./BlogDetail.scss";
 
 const BlogDetail = () => {
-  const { name } = useParams();
+  const { id } = useParams();
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // API'den tüm blogları çekiyoruz
-    fetch("http://localhost:3002/blogs")
-      .then((res) => res.json())
+    // Artık tek blog endpoint’i kullanıyoruz
+    fetch(`http://localhost:3002/blogs/${id}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Blog bulunamadı");
+        return res.json();
+      })
       .then((data) => {
-        // name ile eşleşen blogu bul
-        const blogItem = data.find((b) => b.name === name);
-        setItem(blogItem);
+        setItem(data);
         setLoading(false);
       })
       .catch((err) => {
         console.error("API hatası:", err);
+        setItem(null);
         setLoading(false);
       });
-  }, [name]);
+  }, [id]);
 
   if (loading) return <p>Yükleniyor...</p>;
   if (!item) return <p>Blog bulunamadı.</p>;
