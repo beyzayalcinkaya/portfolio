@@ -1,14 +1,13 @@
-// src/Components/Blog/Blog.jsx
 import React, { useEffect, useState } from "react";
 import Box from "../Box/Box";
+import { fetchBlogs } from "../../api"; // <- burayı ekledik
 import "./Blog.scss";
 
 const Blog = () => {
   const [blogData, setBlogData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3002/blogs")
-      .then((res) => res.json())
+    fetchBlogs()
       .then((data) => setBlogData(data))
       .catch((err) => console.error("Backend error:", err));
   }, []);

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { fetchBlogById } from "../../api"; // <- burayı ekledik
 import "./BlogDetail.scss";
 
 const BlogDetail = () => {
@@ -8,12 +9,7 @@ const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Artık tek blog endpoint’i kullanıyoruz
-    fetch(`http://localhost:3002/blogs/${id}`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Blog bulunamadı");
-        return res.json();
-      })
+    fetchBlogById(id)
       .then((data) => {
         setItem(data);
         setLoading(false);

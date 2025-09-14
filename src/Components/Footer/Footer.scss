@@ -1,16 +1,12 @@
 @use "../../styles/mixins/mixins" as mix;
 .footer {
     bottom: 0;
-    color: #888; 
-    font-size: 1rem; 
+    color: #888;
+    font-size: 1rem;
     font-weight: 600;
     padding: 2rem 0;
-  
-
-    @include mix.responsive(phone){
+    @include mix.responsive(phone) {
         align-items: center;
         font-weight: 400;
-      }
-  }
-
-
+    }
+}
