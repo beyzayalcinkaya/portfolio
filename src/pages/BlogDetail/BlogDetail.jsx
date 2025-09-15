@@ -1,31 +1,54 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchBlogById } from "../../api"; // <- burayı ekledik
+import { fetchBlogById } from "../../api";
 import "./BlogDetail.scss";
 
 const BlogDetail = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [retryMessage, setRetryMessage] = useState(false);
 
   useEffect(() => {
-    fetchBlogById(id)
-      .then((data) => {
+    const loadBlog = async () => {
+      try {
+        const data = await fetchBlogById(id, 3, 1000);
         setItem(data);
-        setLoading(false);
-      })
-      .catch((err) => {
+      } catch (err) {
         console.error("API hatası:", err);
-        setItem(null);
+        setRetryMessage(true);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    loadBlog();
   }, [id]);
 
-  if (loading) return <p>Yükleniyor...</p>;
+  if (loading) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner"></div>
+        <p>Yükleniyor...</p>
+      </div>
+    );
+  }
+
+  if (retryMessage) {
+    return (
+      <div className="spinner-container">
+        <p>Backend uyanıyor, biraz bekleyin...</p>
+      </div>
+    );
+  }
+
   if (!item) return <p>Blog bulunamadı.</p>;
 
   return (
-    <section className="blog-detail-container" style={{ padding: "2rem" }}>
+    <section
+      className="blog-detail-container item delay-1"
+      style={{ padding: "2rem" }}
+    >
       <h1>{item.title}</h1>
       <p>{item.page_desc}</p>
     </section>

@@ -13,16 +13,19 @@ const App = () => {
   return (
     <div className="container">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
 };
+
 export default App;

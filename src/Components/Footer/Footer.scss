@@ -1,12 +1,16 @@
-@use "../../styles/mixins/mixins" as mix;
 .footer {
-    bottom: 0;
-    color: #888;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 2rem 0;
-    @include mix.responsive(phone) {
-        align-items: center;
-        font-weight: 400;
-    }
-}
+
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px; 
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .footerButtom p {
+    margin: 0;
+  }
+  

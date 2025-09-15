@@ -1,4 +1,36 @@
+@use "../../styles/mixins/mixins" as mix;
+@use "../../styles/animation/animation" as ani;
+.item {
+    opacity: 0;
+    animation: animationSlide 1s forwards;
+    transform: translateY(-250px);
+}
 
+@include ani.animation-delays("delay", 1, 0.8s);
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; 
+    gap: 1rem;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid green;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
 
 .blog-detail-container{
     margin: 0;                
@@ -8,4 +40,6 @@
     gap: 3rem;   
     justify-content: center;  
     align-items: center;  
+
+    
 }
