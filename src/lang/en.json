@@ -34,5 +34,10 @@
   "messageLabel": "Your Message",
   "messagePlaceholder": "Enter your message here",
   "submitButton": "Submit",
-  "copyright": "All rights reserved."
+  "copyright": "All rights reserved.",
+    "loading":"Loading...",
+  "loadingTime":"There may be a wait time of up to a minute.",
+  "backendSleep":"Backend is waking up, wait a minute..."
+
+
 }

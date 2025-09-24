@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { fetchBlogById } from "../../api";
 import "./BlogDetail.scss";
 
 const BlogDetail = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -29,7 +31,8 @@ const BlogDetail = () => {
     return (
       <div className="spinner-container">
         <div className="spinner"></div>
-        <p>Yükleniyor...</p>
+        <p>{t("loading")}</p>
+        <p>{t("loadingTime")}</p>
       </div>
     );
   }
@@ -37,7 +40,7 @@ const BlogDetail = () => {
   if (retryMessage) {
     return (
       <div className="spinner-container">
-        <p>Backend uyanıyor, biraz bekleyin...</p>
+        <p>{t("backendSleep")}</p>
       </div>
     );
   }
