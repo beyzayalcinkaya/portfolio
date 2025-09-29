@@ -48,12 +48,13 @@ const BlogDetail = () => {
   if (!item) return <p>Blog bulunamadı.</p>;
 
   return (
-    <section
-      className="blog-detail-container item delay-1"
-      style={{ padding: "2rem" }}
-    >
-      <h1>{item.title}</h1>
-      <p>{item.page_desc}</p>
+    <section class="blog-detail-container item delay-1">
+      <div class="container post-content-wrapper">
+        <div
+          class="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: item.page_desc }}
+        />
+      </div>
     </section>
   );
 };
