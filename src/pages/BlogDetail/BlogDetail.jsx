@@ -5,7 +5,7 @@ import { fetchBlogById } from "../../api";
 import "./BlogDetail.scss";
 
 const BlogDetail = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -13,6 +13,8 @@ const BlogDetail = () => {
 
   useEffect(() => {
     const loadBlog = async () => {
+      setLoading(true);
+      setRetryMessage(false);
       try {
         const data = await fetchBlogById(id, 3, 1000);
         setItem(data);
@@ -25,7 +27,7 @@ const BlogDetail = () => {
     };
 
     loadBlog();
-  }, [id]);
+  }, [id, i18n.language]);
 
   if (loading) {
     return (
@@ -48,10 +50,10 @@ const BlogDetail = () => {
   if (!item) return <p>Blog bulunamadı.</p>;
 
   return (
-    <section class="blog-detail-container item delay-1">
-      <div class="container post-content-wrapper">
+    <section className="blog-detail-container item delay-1">
+      <div className="container post-content-wrapper">
         <div
-          class="blog-post-content"
+          className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: item.page_desc }}
         />
       </div>

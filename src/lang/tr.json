@@ -37,6 +37,10 @@
   "copyright": "Tüm hakları saklıdır.",
   "loading":"Yükleniyor...",
   "loadingTime":"Bir dakikayı bulan bekleme süresi olabilir.",
-  "backendSleep":"Backend uyanıyor, biraz bekleyin..."
+  "backendSleep":"Backend uyanıyor, biraz bekleyin...",
   
+    "r_time": "Okuma süresi",
+    "min_suffix": "dk"
+  
+ 
 }

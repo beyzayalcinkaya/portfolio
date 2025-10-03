@@ -5,13 +5,15 @@ import { fetchBlogs } from "../../api";
 import "./Blog.scss";
 
 const Blog = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [blogData, setBlogData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [retryMessage, setRetryMessage] = useState(false);
 
   useEffect(() => {
     const loadBlogs = async () => {
+      setLoading(true);
+      setRetryMessage(false);
       try {
         const data = await fetchBlogs(3, 1000);
         setBlogData(data);
@@ -24,7 +26,7 @@ const Blog = () => {
     };
 
     loadBlogs();
-  }, []);
+  }, [i18n.language]);
 
   if (loading) {
     return (

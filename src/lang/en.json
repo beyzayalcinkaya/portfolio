@@ -37,7 +37,11 @@
   "copyright": "All rights reserved.",
     "loading":"Loading...",
   "loadingTime":"There may be a wait time of up to a minute.",
-  "backendSleep":"Backend is waking up, wait a minute..."
+  "backendSleep":"Backend is waking up, wait a minute...",
+  
+    "r_time": "Reading time",
+    "min_suffix": "min"
+  
 
 
 }
